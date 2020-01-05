@@ -1,0 +1,90 @@
+
+// gallery CSS 
+@media (min-width:801px) {
+	.productView-details {
+		width : 35%;
+	}
+
+	.productView-description {
+		width : 35%;
+	}
+
+	.productView-images {
+		width : 62%;
+	}
+
+	.productView-image {
+		display    : none;
+		height     : 100%;
+		width      : 100%;
+		background : #fff;
+	}
+
+	.productView-image + .productView-thumbnails {
+		.productView-thumbnail { width: 50%;
+			.productView-thumbnail-link {
+				height    : 100%;
+				width     : 100%;
+				max-width : 100%;
+				border    : none;
+
+				&:hover { border:none;}
+				img { width: 100%; height: 100%;}
+			}
+		}
+	}
+
+	.closegallery {
+		position        : fixed;
+		display         : none;
+		top             : 10px;
+		right           : 0px;
+		z-index         : 50;
+		height          : 2.28571rem;
+		width           : 2.28571rem;
+		padding         : 0;
+		font-size       : 26px;
+		color           : black;
+		line-height     : 2.28571rem;
+		text-align      : center;
+		text-decoration : none;
+	}
+
+	.imagesgallery {
+		.body {margin-top: 0rem;}
+
+		.breadcrumbs { display: none;}
+
+		.header { display: none;}
+
+		.productView-image{ display: flex;}
+
+		.productView-images {width: 100%;}
+
+		#product-reviews { display: none;}
+
+		.productView-details { display: none;}
+
+		.productView-description { display: none;}
+
+		.footer { display: none;}
+
+		.tabs{ display: none;}
+
+		.closegallery { display: block;}
+
+		.tabs-contents { display: none;}
+
+		.productView-image + .productView-thumbnails {
+			.productView-thumbnail { width: 10%;
+				.productView-thumbnail-link {
+					height    : 100%;
+					width     : 100%;
+					max-width : 100%;
+
+					img { width: 100%; height: 100%;}
+				}
+			}
+		}
+	}
+}
